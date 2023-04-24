@@ -47,7 +47,7 @@ h1 {
 }
 
 h4 {
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: 100;
     color: #4d637d;
     text-align: justify;
@@ -71,10 +71,6 @@ h4 {
     background-color: #fc7613;
 }
 
-.btn button:visited {
-    background-color: #fc7613;
-}
-
 .submit button {
     height: 60px;
     width: 550px;
@@ -84,3 +80,52 @@ h4 {
     border-radius: 30px;
 }
 
+@media (max-width:1023px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:641px) {
+    body {
+        font-size: 12px;
+    }
+
+    .star {
+        margin-bottom: 20px;
+    }
+
+    .container {
+        width: 280px;
+        height: 700px;
+    }
+
+    h4 {
+        margin: 0 10px;
+    }
+
+    .btn {
+        margin: 20px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn button {
+        background-color: #4d637d;
+        color: white;
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        border: none;
+        margin-bottom: 5px;
+    }
+
+    .submit button {
+        height: 60px;
+        width: 180px;
+        background-color: #fc7613;
+        border: none;
+        color: white;
+        border-radius: 30px;
+    }
+}
